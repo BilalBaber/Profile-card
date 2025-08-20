@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d6d6d6;
+    }
+
+    .Profile-card {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 340px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0, 5px, 10px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        padding: 25px;
+
+
+    }
+
+    .image {
+
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #4070f4;
+        border-radius: 50%;
+        padding: 3px;
+
+
+    }
+
+    .profile-img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+    }
+
+
+    .Profile-card .text-data {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+    .text-data .name {
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .text-data .jobs {
+
+        font-size: 1rem;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .Profile-card .media-icons {
+
+        display: flex;
+        align-items: center;
+        ;
+
+    }
+
+    .media-icons .link {
+        color: #333;
+        margin: 0 5px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 42px;
+        width: 42px;
+        background-color: #4070f4;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .social-media-icon-img {
+
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .btn {
+
+        margin: 0 10px;
+        padding: 8px 35px;
+        border-radius: 50px;
+        background-color: #4070f4;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all 0.3s ease;
+
+
+
+    }
+
+    .btn:hover {
+
+        transition: all 0.3s ease;
+        background-color: #0e4bf1;
+
+
+    }
+
+    .buttons {
+
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+
+    }
+
+    .github {
+
+        background-color: black;
+        color: #333;
+        margin: 0 5px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 42px;
+        width: 42px;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .like-icons {
+
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap:5px;
+    }
+</style>
+
+<body>
+
+    <div class="Profile-card">
+        <div class="image">
+            <img src="Capture.PNGdf.PNG" class="profile-img" alt="error">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Bilal Baber</span>
+            <span class="jobs">Blogger</span>
+
+
+        </div>
+        <div class="media-icons">
+
+            <a href="https://github.com/BilalBaber" class="github">
+                <i><img class="social-media-icon-img" src="https://img.icons8.com/ios-filled/50/000000/github.png"
+                        style="background-color: white ; border-radius:50px ;" alt="Facebook Icon" /></i>
+            </a>
+
+            <a href="#" class="link">
+                <i><img class="social-media-icon-img" src="https://img.icons8.com/ios-filled/50/000000/twitter.png"
+                        alt="Twitter Icon" /></i>
+            </a>
+
+            <a href="https://www.instagram.com/muhammad_bilal.2/" style="background-color:  #cc4692; " class="link">
+                <i><img class="social-media-icon-img"
+                        src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram Icon" /></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-bilal-40457830b/" class="link">
+                <i><img class="social-media-icon-img" src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+                        alt="LinkedIn Icon" /></i>
+            </a>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="https://www.instagram.com/muhammad_bilal.2/"><button class="btn btn-1">Follow</button></a>
+            <a href="https://usemy-knowledge.blogspot.com/"> <button class="btn btn-2">Blogs</button></a>
+
+        </div>
+
+
+        <div class="like-icons">
+
+            <!-- Instagram Like Icon -->
+            <a href="#" class="link">
+                <i>
+                    <img class="social-media-icon-img" src="https://img.icons8.com/ios-filled/50/fa314a/like--v1.png"
+                        alt="Instagram Like Icon" />
+                </i>
+            </a>
+            <span class="">500K |</span>
+
+            <!-- Instagram Comment Icon -->
+            <a href="#" class="link">
+                <i>
+                    <img class="social-media-icon-img"
+                        src="https://img.icons8.com/ios-filled/50/000000/speech-bubble--v1.png"
+                        alt="Instagram Comment Icon" />
+                </i>
+            </a>
+            <span class="">376K |</span>
+
+            <!-- Instagram Share Icon -->
+            <a href="#" class="link">
+                <i>
+                    <img class="social-media-icon-img" src="https://img.icons8.com/ios-filled/50/000000/sent.png"
+                        alt="Instagram Share Icon" />
+                </i>
+            </a>
+            <span class="">100K</span>
+
+
+        </div>
+
+</body>
+
+</html>
